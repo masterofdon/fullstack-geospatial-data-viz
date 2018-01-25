@@ -1,0 +1,56 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "A Simple Backend in Nodejs for Data-Viz",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "build": "npm run clean && webpack --progress --bail --env dist -p",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint ./src --fix",
+    "lint-sass": "sass-lint -c .sass-lint.yml 'src/styles/**/*.scss' -v -q",
+    "posttest": "npm run lint",
+    "reinstall": "rimraf node_modules && npm install",
+    "serve:dev": "webpack-dev-server --progress --hot --open --env dev",
+    "serve:dist": "webpack-dev-server --open --env dist -p --progress",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "d3-request": "^1.0.6",
+    "express": "^4.16.2",
+    "seedrandom": "^2.4.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-istanbul": "^4.1.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-airbnb": "^2.0.0",
+    "babel-preset-es2015-native-modules": "^6.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "file-loader": "^0.11.1",
+    "glob": "^7.1.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "keywords": [
+    "dataviz"
+  ],
+  "author": "Ahmet Erdem Ekin (masterofdon)",
+  "license": "ISC"
+}
