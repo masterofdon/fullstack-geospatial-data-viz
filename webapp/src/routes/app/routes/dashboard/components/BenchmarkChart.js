@@ -37,12 +37,12 @@ radar.options = {
         }
       },
       indicator: [
-        { name: 'Hava Kalitesi', max: 6000},
-        { name: 'Olcum Sayisi', max: 16000},
-        { name: 'Olcum Suresi', max: 30000},
-        { name: 'Gurultu', max: 38000},
-        { name: 'Sicaklik', max: 52000},
-        { name: 'Nem', max: 25000}
+        { name: 'Memory', max: 6000},
+        { name: 'CPU', max: 16000},
+        { name: 'Response in 50ms', max: 30000},
+        { name: 'Response in 100ms', max: 38000},
+        { name: 'Availability', max: 52000},
+        { name: 'Storage', max: 25000}
       ]
     }
   ],

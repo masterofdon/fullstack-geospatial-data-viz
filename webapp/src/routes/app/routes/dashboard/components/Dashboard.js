@@ -182,7 +182,7 @@ function onChangeHandler(value){
 }
 
 let stats = [];
-stats.push(new Stat('2317','',R.labels.TR.dashboard.stats.stat1.header,'local_taxi',CHARTCONFIG.color.info));
+stats.push(new Stat('2317','',R.labels.TR.dashboard.stats.stat1.header,'dvr',CHARTCONFIG.color.info));
 stats.push(new Stat(99.8,'%',R.labels.TR.dashboard.stats.stat2.header,"wifi_tethering",CHARTCONFIG.color.success));
 stats.push(new Stat(187119,' HOURS',R.labels.TR.dashboard.stats.stat3.header,'assets/images/clock.svg',CHARTCONFIG.color.warning));
 stats.push(new Stat(13056199,'',R.labels.TR.dashboard.stats.stat4.header,'assets/images/speedometer.svg',CHARTCONFIG.color.danger));

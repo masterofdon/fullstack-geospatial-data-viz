@@ -26,7 +26,7 @@ class Engagement extends Component{
                             <SystemMetricsContainer metrics={metrics} />
                             <EngagementStats />
                         </BoxContainer>
-                        <BoxContainer size={4} title={'Esik Degerler'}>
+                        <BoxContainer size={4} title={'Benchmark'}>
                             <BenchmarkChart />
                         </BoxContainer>
                     </div>
