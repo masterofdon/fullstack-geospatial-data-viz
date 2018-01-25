@@ -1,5 +1,5 @@
 {
-  "marker": {
+  "marker-1": {
     "x": 0,
     "y": 0,
     "width": 128,
@@ -132,7 +132,7 @@
     "height": 128,
     "anchorY": 128
   },
-  "marker-1": {
+  "marker": {
     "x": 384,
     "y": 512,
     "width": 128,

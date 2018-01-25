@@ -38,7 +38,7 @@ class Sidebar extends React.Component {
       toggleIcon = <i className="material-icons">radio_button_checked</i>;
     }
     const imgStyle = {
-      width: '30px'
+      width: '20px'
     }
     return (
       <nav
@@ -57,7 +57,7 @@ class Sidebar extends React.Component {
             'bg-color-danger': ['16', '26', '36'].indexOf(colorOption) >= 0 })}
                 >
 
-          <img src="assets/images/ion.logo.disi-02.png" style={imgStyle}/>
+          <img src="assets/react.svg" style={imgStyle}/>
           <a href="javascript:;" className="collapsednav-toggler" onClick={this.onToggleCollapsedNav}>
             {toggleIcon}
           </a>

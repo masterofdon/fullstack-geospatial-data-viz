@@ -19,8 +19,7 @@ const prefHeight = window.innerHeight * 0.80;
 const isNotNull = (r) => (!isNull(r));
 const isNull = (r) => (r == null || r === 'undefined');
 const MAPTYPES = {
-    taxiicon : 'taxiicon',
-    heatmap : 'heatmap'
+    taxiicon : 'taxiicon'
 }
 export default class MapContainer extends Component {
 

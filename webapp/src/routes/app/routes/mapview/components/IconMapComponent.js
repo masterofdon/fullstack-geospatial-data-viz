@@ -204,7 +204,6 @@ export default class IconMapComponent extends Component {
                     onClick={this._onItemClicked.bind(this)}
                 >       
                 </TaxiRealtimeDataIconOverlay>}
-                {deviceDetails && <IconComponentDetailsInfoBox devicedetails={deviceDetails} captureScroll={true} onClose={this.handleClose}/>}
                 {popupContent && <PopupContent lngLat={popupLatLng} anchor={"top"} devices={popupContent} onItemSelected={this.onDeviceSelected.bind(this)}/>}
             </div>
         );

@@ -22,7 +22,7 @@ class Header extends React.Component {
   render() {
     const { isFixedHeader, colorOption } = this.props;
     const imgStyle = {
-      width: '80px'
+      width: '40px'
     }
     return (
       <section className="app-header">
@@ -40,10 +40,6 @@ class Header extends React.Component {
             <a href="javascript:;" className="md-button header-icon toggle-sidebar-btn" ref={(c) => { this.sidebarBtn = c; }}>
               <i className="material-icons">menu</i>
             </a>
-          </div>
-
-          <div className="brand hidden-md-down">
-            <h2><img src="assets/images/ion.logo.disi-02.png" style={imgStyle}/></h2>
           </div>
 
           <div className="top-nav-right">
